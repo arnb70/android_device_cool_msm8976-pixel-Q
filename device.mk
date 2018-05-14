@@ -90,6 +90,16 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library \
     libantradio
+    audiod \
+    audio.a2dp.default \
+    audio.primary.msm8937 \
+    audio.r_submix.default \
+    audio.usb.default \
+    libaacwrapper \
+    libaudio-resampler \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libqcompostprocbundle
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -111,11 +121,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors \
-    libtinyalsa \
-    libtinycompress \
-    libtinyxml \
-    tinymix
+    libqcomvoiceprocessingdescriptors 
 
 # Audio
 PRODUCT_PACKAGES += \
