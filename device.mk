@@ -447,6 +447,8 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     wifilogd \
+    dhcpcd.conf \
+    wificond \
     wpa_supplicant \
     wpa_supplicant.conf
 
@@ -455,6 +457,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
 # WCNSS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
+    $(LOCAL_PATH)/wifi/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
+    $(LOCAL_PATH)/wifi/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny
+
+# Wi-Fi Display
 PRODUCT_PACKAGES += \
     wcnss_service
 
