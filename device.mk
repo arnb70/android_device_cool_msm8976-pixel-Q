@@ -426,6 +426,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.lineage.build.vendor_security_patch=2016-12-01
 
+# Vendor-common modules
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
+    perf
+
 # VR
 PRODUCT_PACKAGES += \
     vr.msm8952
