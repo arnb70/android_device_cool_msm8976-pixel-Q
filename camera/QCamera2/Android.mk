@@ -91,6 +91,16 @@ LOCAL_C_INCLUDES := \
         system/core/include/cutils \
         system/core/include/system \
         system/media/camera/include/system
+        hardware/qcom/media/libstagefrighthw \
+        hardware/qcom/media/mm-core/inc \
+        $(TARGET_OUT_HEADERS)/mm-camera-lib/cp/prebuilt
+
+LOCAL_HEADER_LIBRARIES := media_plugin_headers
+LOCAL_HEADER_LIBRARIES += libandroid_sensor_headers
+LOCAL_HEADER_LIBRARIES += libcutils_headers
+LOCAL_HEADER_LIBRARIES += libsystem_headers
+LOCAL_HEADER_LIBRARIES += libhardware_headers
+LOCAL_HEADER_LIBRARIES += media_plugin_headers
 
 #HAL 1.0 Include paths
 LOCAL_C_INCLUDES += \
@@ -116,7 +126,7 @@ endif
 LOCAL_C_INCLUDES += \
         $(TARGET_OUT_HEADERS)/qcom/display
 LOCAL_C_INCLUDES += \
-        hardware/qcom-caf/msm8952/display/libqservice
+        hardware/qcom/display/libqservice
 LOCAL_SHARED_LIBRARIES := liblog libhardware libutils libcutils libdl libsync
 LOCAL_SHARED_LIBRARIES += libmmcamera_interface libmmjpeg_interface libui libcamera_metadata
 LOCAL_SHARED_LIBRARIES += libqdMetaData libqservice libbinder
