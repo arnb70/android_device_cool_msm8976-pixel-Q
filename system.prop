@@ -284,3 +284,7 @@ persist.camera.tnr.video=1
 camera.tnr.video=1
 ro.camera.notify_nfc=1
 camera.notify_nfc=1
+
+#Fix for ui freeze
+sys.use_fifo_ui = 1
+debug.sf.latch_unsignaled = 1
