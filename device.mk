@@ -201,6 +201,9 @@ $(call inherit-product, build/target/product/verity.mk)
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl:64 \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.2-service  \
     gralloc.msm8952 \
     copybit.msm8952 \
     hwcomposer.msm8952 \

@@ -65,6 +65,7 @@ on late-fs
     start surfaceflinger
     start bootanim
     start vendor.gralloc-2-0
+    start vendor.hwcomposer-2-2
 
     # mount RW partitions which need run fsck
     mount_all /system/vendor/etc/fstab.qcom --late
