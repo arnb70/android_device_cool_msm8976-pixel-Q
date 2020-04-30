@@ -54,10 +54,10 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
+#Prebuilt Kernel
 TARGET_KERNEL_ARCH := arm64
-
-TARGET_KERNEL_SOURCE := kernel/coolpad/msm8976
-TARGET_KERNEL_CONFIG := lineage_c106_defconfig
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/coolpad/coolpad-kernel/Image.gz-dtb
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -205,8 +205,6 @@ TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_s2
 TARGET_RECOVERY_DEVICE_MODULES := //$(DEVICE_PATH):libinit_s2
 
-# IPA
-USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR := true
 
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
@@ -241,7 +239,6 @@ TARGET_USES_OLD_MNC_FORMAT := true
 TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # SELinux
-#include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/legacy
 
