@@ -261,6 +261,9 @@ TARGET_LD_SHIM_LIBS := \
    /vendor/bin/gx_fpd|fakelogprint.so \
    /vendor/lib/hw/camera.msm8952.so|libcamera_shim.so
 
+# SurfaceFlinger
+TARGET_USE_AOSP_SURFACEFLINGER := true
+
 # Telephony
 TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 
