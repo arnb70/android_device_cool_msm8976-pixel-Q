@@ -57,7 +57,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 #Prebuilt Kernel
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-TARGET_PREBUILT_KERNEL := device/coolpad/coolpad-kernel/Image.gz-dtb
+TARGET_PREBUILT_KERNEL := device/coolpad/c106/kernel/Image.gz-dtb
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
