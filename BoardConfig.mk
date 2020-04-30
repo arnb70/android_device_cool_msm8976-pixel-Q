@@ -288,3 +288,5 @@ TARGET_OTA_ASSERT_DEVICE := c106,C106,c103,C103,cool_c1,le_c106,aosp_c106
 
 # inherit from the proprietary version
 -include vendor/coolpad/c106/BoardConfigVendor.mk
+
+BUILD_BROKEN_DUP_RULES := true

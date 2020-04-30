@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_c106.mk
+    $(LOCAL_DIR)/pa_c106.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_c106-user \
-    aosp_c106-userdebug \
-    aosp_c106-eng
+    pa_c106-user \
+    pa_c106-userdebug \
+    pa_c106-eng

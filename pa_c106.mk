@@ -17,14 +17,13 @@
 # Inherit device configuration
 $(call inherit-product, device/coolpad/c106/full_c106.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common PA stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+include  vendor/pa/config/common_full_phone.mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := c106
-PRODUCT_NAME := aosp_c106
+PRODUCT_NAME := pa_c106
 PRODUCT_BRAND := coolpad
 PRODUCT_MANUFACTURER := coolpad
 
