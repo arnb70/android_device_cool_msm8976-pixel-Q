@@ -351,10 +351,6 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_soft_flacdec
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
-
 # ParanoidDoze
 PRODUCT_PACKAGES += \
     ParanoidDoze
