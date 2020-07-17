@@ -65,3 +65,6 @@
 /system/vendor/bin/hw/android\.hardware\.light@2\.0-service.griffin        u:object_r:hal_light_default_exec:s0
 /sys/devices/soc/900000.qcom,mdss_mdp/900000.qcom,mdss_mdp:qcom,mdss_fb_primary/leds/lcd-backlight/brightness	u:object_r:sysfs_leds:s0
 /sys/devices/soc/leds-qpnp-9/leds/charging/brightness		u:object_r:sysfs_leds:s0
+
+# Power
+/vendor/bin/hw/android\.hardware\.power@1\.2-service          u:object_r:hal_power_default_exec:s0
