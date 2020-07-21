@@ -90,7 +90,7 @@ LOCAL_C_INCLUDES := \
         hardware/qcom-caf/msm8952/media/mm-core/inc \
         system/core/include/cutils \
         system/core/include/system \
-        system/media/camera/include/system
+        system/media/camera/include/system \
         hardware/qcom/media/libstagefrighthw \
         hardware/qcom/media/mm-core/inc \
         $(TARGET_OUT_HEADERS)/mm-camera-lib/cp/prebuilt
