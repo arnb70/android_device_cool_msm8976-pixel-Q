@@ -162,6 +162,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
+#Crypto
+    vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee \
+    vendor.qti.hardware.cryptfshw@1.0
+
+
 # Codec2 modules
 PRODUCT_PACKAGES += \
     com.android.media.swcodec \
