@@ -174,6 +174,9 @@ EXCLUDE_SERIF_FONTS := true
 # Extended filesystem support
 TARGET_EXFAT_DRIVER := sdfat
 
+# EAP-SIM security
+DISABLE_EAP_PROXY := true
+
 # FM
 BOARD_HAVE_QCOM_FM := true
 TARGET_QCOM_NO_FM_FIRMWARE := true
