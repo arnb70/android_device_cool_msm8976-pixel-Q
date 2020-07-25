@@ -24,9 +24,9 @@ VENDOR=coolpad
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ARROW_ROOT="${MY_DIR}/../../.."
+ROOT="$MY_DIR"/../../..
 
-HELPER="${ARROW_ROOT}/vendor/arrow/build/tools/extract_utils.sh"
+HELPER="$ROOT"/vendor/pa/build/tools/extract_utils.sh
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -58,15 +58,15 @@ if [ -z "${SRC}" ]; then
     SRC=adb
 fi
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ARROW_ROOT}" false "${CLEAN_VENDOR}"
+# Initialize the common helper
+setup_vendor "$DEVICE" "$VENDOR" "$ROOT" false "$CLEAN_VENDOR"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" ${KANG} --section "${SECTION}"
 
 extract "${MY_DIR}/proprietary-files-qc.txt" "${SRC}" ${KANG} --section "${SECTION}"
 
 
-DEVICE_BLOB_ROOT="$ARROW_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+DEVICE_BLOB_ROOT="$ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 patchelf --remove-needed libbacktrace.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpcmd
 patchelf --remove-needed libunwind.so "$DEVICE_BLOB_ROOT"/vendor/bin/gx_fpcmd
