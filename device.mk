@@ -107,11 +107,7 @@ PRODUCT_PACKAGES += \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libqcomvoiceprocessingdescriptors \
-    libtinyalsa \
-    libtinycompress \
-    libtinyxml \
-    tinymix
+    libqcomvoiceprocessingdescriptors 
 
 # Audio
 PRODUCT_PACKAGES += \
