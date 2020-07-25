@@ -336,10 +336,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml
     $(LOCAL_PATH)/configs/privapp-permissions-lineage.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lineage.xml
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power@1.2-service
-
 # Qualcomm dependencies
 PRODUCT_PACKAGES += \
     libcurl \
