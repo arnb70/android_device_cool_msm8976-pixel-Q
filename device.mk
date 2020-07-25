@@ -21,7 +21,7 @@ $(call inherit-product, vendor/coolpad/c106/c106-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pa
 
 # Screen density
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
